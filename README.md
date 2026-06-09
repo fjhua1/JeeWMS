@@ -1,85 +1,87 @@
+JEEWMS 开源仓储管理数字化平台生态体系
+面向智能制造与现代供应链场景，JeeWMS 致力于构建开放、协同、可扩展的仓储管理数字化平台生态。平台基于企业级 Java 技术栈打造，融合移动终端、工业物联网、调度算法与数据分析能力，为企业提供从基础仓储管理到智能协同运营的一体化数字底座。
 
-JEEWMSQQ交流群：335607153 1群已满  请加2群  313930553  有任何问题可以加群交流  
- **智能制造产品JEEMES已经开源**  (https://gitee.com/erzhongxmu/jeemes) 欢迎大家STAR
- 
-测试系统地址 http://47.113.229.131:9080/jeewms  用户名：admin 密码：llg123 本地启动的用户名：admin 密码：llg123
-大家看到了，star一下，谢谢，本团队会持续更新，一直开源！
+## ✨ 生态连接
+- **技术社区**
+    - **QQ 技术交流群①**：335607153（已满）
+    - **QQ 技术交流群②**：313930553（技术咨询 / 实施服务）
 
-开源不易，希望大家多多支持，有仓储硬件需求（PDA，RFID，AGV等）的可以找我们代买，保证最优惠的价格，官网全新上线，欢迎访问  [公司官网](http://www.huayi-tec.com/)。
+- **开源生态矩阵**：  
+  - 智能制造平台 JEEMES： 已开源 [Gitee链接](https://gitee.com/erzhongxmu/jeemes)  
+  - Android移动端开源仓库 [JeeWMSapp-uni](https://gitee.com/erzhongxmu/JeeWMSapp-uni)  
+- **合作伙伴**：  
+  ![合作伙伴](DOC/gzl.png)
 
-一、项目简介：
-     
-    JeeWMS是基于java的智能仓储管理系统，在经过多家公司上线运行后，为了降低物流仓储企业的信息化成本，决定全面开源
-    此产品。针对有特殊信息化需求的企业，提供高性价比的实施服务。
+## 📈 价值主张
+**开源仓储中枢引擎** | **GPL-3.0 协议** | **企业级技术架构**  
+JeeWMS 以云端管理平台 + UNI-APP 智能终端为核心，构建覆盖 **WMS / OMS / BMS / TMS** 的仓储数字化基础能力，已在冷链、快消、汽车制造等行业场景中得到验证。平台可为企业提供以下核心能力：
+- ✅ 多租户架构支持  
+- ✅ 公有云/私有云/混合云部署  
+- ✅ 工业物联网集成（PDA/RFID/AGV等）  
+- ✅ 动态计费与业务结算引擎   
+- ✅ 自动化调度与任务协同能力  
+- ✅ 商业智能分析与可视化决策支持   
+JeeWMS 不仅是一个开源仓储管理系统，更是企业迈向数字化仓储、智能化运营和生态协同的重要基础平台。
 
-    产品特点：
-    1、适用范围：第三方物流仓储企业，冷链仓库，工厂仓储，海外仓等。
-    2、技术特点：基于JAVA的WEB后台，基于UNI-APP开发的智能仓储管理系统手持操作端。
-    3、功能特点：涵盖订单管理系统（OMS），仓库管理系统（WMS），计费管理系统（BMS），现场作业系统（RF），RFID模块
-    4，AGV模拟程序：加入了基于PLC的模拟程序，大家可以基于此思路研究AGV的调度。
-   
+## 🤝 生态合作计划
+### 开源共建计划
+JeeWMS 遵循 **GPL-3.0 开源协议**，欢迎开发者、实施伙伴、行业集成商共同参与生态建设：
+- 技术路线持续开放与透明演进   
+- 企业级 Issue 响应与协作机制  
+- 持续集成与版本迭代更新   
+- 场景插件、接口组件与行业能力共建 
 
-二、业务介绍：    
+### 企业级服务
+由[华壹智能](http://www.huayi-tec.com)提供：
+🔧 工业硬件集成方案（PDA / AGV / RFID 等）  
+🔧 私有化部署与定制开发  
+🔧  系统性能优化与架构咨询 
+🔧  行业解决方案设计与实施陪跑 
+📧 商务合作：电话：13850081872 QQ：290813851  
 
-    1、主要功能
-        计费配置、仓库配置、基础配置、计费管理、基础资料、仓库管理、月台管理、进货管理、出货管理、退货管理、库内管理、盘点管理、
-        库存查询、PDA功能、分析报表、分析图表、域验证。
-    2、主要流程
-        客户下单流程，收货流程，上架流程，移货作业、拣货流程：批量拣货，按单拣货、盘点流程、计费流程。
-    3、硬件对接
-        对接自主研发基于LORA物联网技术的电子货架标签模块，满足快速退货分拣，波次拣货；对接自动化立体库系统，对接AGV，RFID。
-    4、计费管理：通过在线SQL，动态完成费用的计算，满足3PL仓费用复杂多变的需求。
+## 🧩 技术全景图
+```
+A[Java技术生态] --> B[SpringMVC+Hibernate，SpringCloud]
+A --> C[Redis+Ehcache]
+A --> D[Minidao持久层]
+B --> E[分布式事务管理]
+C --> F[高并发缓存策略]
+D --> G[动态SQL引擎]
+```
 
-三、安装说明：
-  
-    1，开发环境：
-       开发工具：
-		IDEA（版本不限）；
-		JDK1.8
-		Maven
-		Mysql5.7以上（注意设置大小写不敏感，关闭only_full_group_by规则  
-               # 设置sql_mode，去掉了ONLY_FULL_GROUP_BY
-               sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'），mysql8.0不行
-		运行环境：CENTOS6.5以上或windows server 2008、tomcat7以上，JDK1.8， MYSQL5.7
-    2，按照mvn方式导入
-    3，数据库还原：
-        安装完数据库执行下 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%'IDENTIFIED BY '你的密码' WITH GRANT OPTION;
-                          FLUSH PRIVILEGES;     
-        步骤 
-        1：还原数据库，
-        2:修改 dbconfig.properties
-        3: sql导入方式建议 登录MYSQL服务器上用source命令还原,或用Mysqlworkbench importing
-    4，IDEA：mvn tomcat7:run   输入用户名和密码：admin llg123
-    5、主要技术
-        开发语言：JAVA。
-    6、技术架构
-	基础架构基于jeecg。技术架构为SpringMVC+Hibernat+Minidao(类Mybatis)+Easyui(UI库)+ Jquery + Bootstrap + Ehcache + Redis + Ztree等基础架构
-	
-四、技术支持：
+## 🚀 实施路线图
+1. **环境准备**  
+   - JDK1.8 + MySQL5.7（配置优化指南详见文档）
+   - 根据部署文档完成数据库参数优化 
+   - 建议提前完成大小写敏感设置与 SQL 模式调整 
 
-    演示环境：  http://47.113.229.131:9080/jeewms     用户： admin   密码：llg123
-    QQ群：335607153    
-   
-五、开源及商务合作说明：
+2. **快速部署**  
+   ```bash
+   mvn tomcat7:run
+   idea springcloud
+   ```
+3. **数据初始化**  
+   - 推荐使用 MySQL Workbench 完成 Schema 导入与初始化  
+   - 按项目文档完成基础参数与业务字典配置  
 
-    1、开源说明：本项目完全遵循GPL V3协议。
-        如果你喜欢我们的产品, 可以放心从我们的开源版开始使用, 在产品商业化的支持下同时我们会尽最大的努力维护开源版的稳定。
-        后期在不影响公司业务的前提下, 会逐步开放更多的信息化平台。在此期间,如果你发现产品有任何Bug, 请在Issue模块向我们反馈，谢谢。
-    2、商务合作：本项目同时支持开源版实施和定制开发服务，商务合作请 统一联系 QQ：290813851
+## 📦 行业解决方案
+| 场景        | 技术特征                     | 商业价值                          |
+|-------------|------------------------------|-------------------------------- |
+| 冷链物流    | 温控追溯链+批次管理          | 降低损耗、提升追溯能力与库存周转效率  | 
+| 汽车制造    | JIT物料协同+AGV调度           | 提升产线配送效率与物料协同水平      |   
+| 三方物流    | 动态计费引擎+多货主看板       | 提高财务处理效率与运营透明度        |
+注：具体成效将因企业规模、业务流程、实施深度和管理基础不同而有所差异。
 
-# 问题&BUG&建议：请在此提交https://gitee.com/erzhongxmu/jeewms/issues
+## 📷 系统截图
+![AGV调度模拟](1111.png)  
+![主页](https://images.gitee.com/uploads/images/2018/1014/235739_2c29bbbf_544004.png "wmshome.png")  
+![仓位使用率](https://images.gitee.com/uploads/images/2018/1015/000747_4eafc335_544004.png "cwsyl.png")  
+![仓位图](https://images.gitee.com/uploads/images/2018/1015/000813_bab8d35c_544004.png "ccsl.png")  
+![效期预警](https://images.gitee.com/uploads/images/2018/1015/000823_c5a982fe_544004.png "xqyj.png")  
+![运输单](https://images.gitee.com/uploads/images/2018/1016/070614_dad8bb5b_544004.png "ysd.png")  
+![货品ID](https://images.gitee.com/uploads/images/2018/1016/070625_7ab42b77_544004.png "货品ID.png")  
+![拣货单](https://images.gitee.com/uploads/images/2018/1016/070641_343c5b31_544004.png "拣货单.png")  
 
-![AGV调度模拟]![输入图片说明](1111.png)
-![主页](https://images.gitee.com/uploads/images/2018/1014/235739_2c29bbbf_544004.png "wmshome.png")
-![仓位使用率](https://images.gitee.com/uploads/images/2018/1015/000747_4eafc335_544004.png "cwsyl.png")
-![仓位图]![输入图片说明](%E4%BB%93%E4%BD%8D%E5%9B%BE.png)
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1015/000813_bab8d35c_544004.png "ccsl.png")
-![效期预警](https://images.gitee.com/uploads/images/2018/1015/000823_c5a982fe_544004.png "xqyj.png")
-
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1016/070614_dad8bb5b_544004.png "ysd.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1016/070625_7ab42b77_544004.png "货品ID.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1016/070641_343c5b31_544004.png "拣货单.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1015/000843_92d44144_544004.png "Screenshot_2018-10-15-00-07-03-907_com.jeewms.www.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1015/000857_ad7d16dc_544004.png "Screenshot_2018-10-15-00-03-11-011_com.jeewms.www.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1015/000906_e439bf3f_544004.png "Screenshot_2018-10-15-00-03-34-019_com.jeewms.www.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1015/000914_a6078e90_544004.png "Screenshot_2018-10-15-00-04-17-626_com.jeewms.www.png")
+## 📌 加入我们
+华壹智能研发中心持续输出面向工业 4.0 的智慧仓储解决方案，推动开源技术与产业实践深度融合，让更多企业以更低门槛、更高效率迈向物流数字化与智能化。  
+[了解更多](http://www.huayi-tec.com)
